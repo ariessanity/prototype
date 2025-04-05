@@ -29,7 +29,7 @@ export default function WhatWillYouGetSection() {
   return (
     <div className='relative z-0 flex flex-col items-center gap-2 py-6 md:py-10 space-y-4'>
       <Chip color="primary" variant="bordered" className='border-medium px-1 h-7 text-small border-blue-600 text-blue-600'>
-        Benifits
+        BENEFITS
       </Chip>
       <h3 className='text-center text-[28px] font-semibold md:text-[39px]'>What Will You Get</h3>
       <ScrollShadow hideScrollBar={true} orientation={'horizontal'} className='overflow-x-auto scrollbar-hide pt-5 max-lg:w-[calc(100vw-48px)]'>

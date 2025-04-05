@@ -43,7 +43,7 @@ export default function AvailableTestSection() {
   return (
     <div className='relative w-full z-0 py-6 md:py-8'>
       <h3 className="text-center text-[28px] font-semibold md:text-[39px]">Available Tests</h3>
-      <p className="pt-1.5 text-center text-base md:pt-2.5 md:text-[18px]">Each test reveals a new part of you. Start with intelligence, with more tests coming soon</p>
+      <p className="pt-1.5 text-center text-base md:pt-8 md:text-[18px]">Each test reveals a new part of you. Start with intelligence, with more tests coming soon</p>
       <div className='grid grid-rows-4 gap-4 pt-6 max-lg:grid-cols-2 max-lg:grid-rows-2 max-md:grid-cols-1 md:gap-6 md:pt-8 lg:grid-cols-4 lg:grid-rows-1'>
         {cards.map((card, index) => {
           return (

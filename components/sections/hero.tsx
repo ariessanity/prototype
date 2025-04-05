@@ -6,7 +6,7 @@ import { Avatar, AvatarGroup } from '@heroui/avatar'
 
 export default function HeroSection() {
   return (
-    <div className='flex h-full w-full flex-col pt-14 lg:pt-[84px]'>
+    <div className='relative z-0 flex h-full w-full flex-col pt-14 lg:pt-[84px]'>
       <div className='flex h-full w-full flex-col-reverse items-center gap-5 md:flex-row md:justify-between'>
         <div className='flex w-full flex-col gap-3 md:gap-4'>
           <h1 className='text-[32px] font-extrabold leading-[35px] md:text-[48px] md:leading-[57px]'>
@@ -49,7 +49,7 @@ export default function HeroSection() {
           <Image alt='graph' src={'/main-graph.png'} width={500} height={292} />
         </div>
       </div >
-      {/* <div className="absolute -left-1/2 top-0 z-[-1] h-full w-[150vw] bg-gradient-to-b from-white via-[#EBF4FF] to-white"></div> */}
+      <div className="absolute -left-1/2 top-0 z-[-1] h-full w-[150vw] bg-gradient-to-b from-white via-[#EBF4FF] to-white"></div>
     </div >
   )
 }

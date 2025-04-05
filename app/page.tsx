@@ -1,7 +1,9 @@
 import AvailableTestSection from "@/components/sections/available-test";
 import BoostYourAbilitesSection from "@/components/sections/boost-your-abilities";
+import CommunitySection from "@/components/sections/community";
 import HeroSection from "@/components/sections/hero";
 import HowItWorksSection from "@/components/sections/how-it-works";
+import PricingSection from "@/components/sections/pricing";
 import WhatWillYouGetSection from "@/components/sections/what-will-you-get";
 
 export default function Home() {
@@ -12,6 +14,8 @@ export default function Home() {
       <AvailableTestSection />
       <BoostYourAbilitesSection />
       <WhatWillYouGetSection />
+      <PricingSection />
+      <CommunitySection />
     </section>
   );
 }
