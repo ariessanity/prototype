@@ -4,13 +4,12 @@ import { DiscordIcon, GithubIcon, TwitterIcon } from '../icons'
 
 export default function CommunitySection() {
   return (
-    <div className='md relative z-0 flex flex-col items-center justify-between gap-3 py-4 md:flex-row md:py-9'>
-
+    <div className='md relative z-0 flex flex-col items-center justify-between gap-3 py-4 w-full md:flex-row md:py-9'>
       <div className='flex flex-col items-center justify-center gap-1 md:items-start lg:items-start'>
         <div className='flex flex-row items-start gap-1'>
           <h3 className="text-[28px] font-semibold leading-[45px] text-secondary-foreground md:text-[39px]">Community</h3>
         </div>
-        <p className="hidden text-[17px] text-[#454F69] lg:inline-block">Follow us on social media for daily quizzes, challenges and brain teasers to keep your mind sharp</p>
+        <p className="hidden text-[17px] text-[#454F69] break-words lg:inline-block">Follow us on social media for daily quizzes, challenges and brain teasers to keep your mind sharp</p>
         <p className="text-sm lg:hidden">Follow us on social media</p>
       </div>
       <div className='w-full xs-l:w-fit'>
