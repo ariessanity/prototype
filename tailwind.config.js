@@ -21,7 +21,7 @@ const config = {
           default: "#0d766e",
         },
         secondary: {
-          foreground: "#454F69",
+          foreground: "#2B2D42",
           default: "#454F69",
         },
         mint: {

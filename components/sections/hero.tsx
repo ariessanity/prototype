@@ -16,9 +16,9 @@ export default function HeroSection() {
             <br className="max-md:hidden" />
             <span className="inline-block bg-gradient-to-r from-[#27415F] via-[#007AFF] to-[#007AFF] bg-clip-text text-transparent">Real IQ Score?</span>
           </h1>
-          <p className="text-base leading-[25px] text-[#2B2D42] lg:max-w-[325px] lg:text-[18px]">Take our IQ test and unlock your path to self-discovery and development</p>
+          <p className="text-base leading-[25px] lg:max-w-[325px] lg:text-[18px]">Take our IQ test and unlock your path to self-discovery and development</p>
           <div className='mt-2 flex gap-3 max-sm:flex-wrap md:mt-4 md:gap-6'>
-            <Button className="gap-3 bg-[#0d766e] text-lg text-white [&_svg]:flex-shrink-0 h-12 rounded-xl px-6 max-lg:w-full sm:max-w-[306px] md:px-8 lg:gap-6 [&_svg]:h-3.5 [&_svg]:w-3.5 max-md:[&_svg]:hidden" variant="solid" endContent={<ArrowIcon />}>
+            <Button className="gap-3 bg-primary-default text-lg text-white [&_svg]:flex-shrink-0 h-12 rounded-xl px-6 max-lg:w-full sm:max-w-[306px] md:px-8 lg:gap-6 [&_svg]:h-3.5 [&_svg]:w-3.5 max-md:[&_svg]:hidden" variant="solid" endContent={<ArrowIcon />}>
               Start IQ Test Now
             </Button>
             <Button className="h-12 gap-3 border-primary-default !px-6 text-medium text-primary-default hover:bg-primary-default hover:text-white max-lg:w-full" variant="bordered">
@@ -32,7 +32,7 @@ export default function HeroSection() {
               <Avatar src="https://i.pravatar.cc/150?u=a042581f4e29026704d" className='-ms-2' />
               <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026302d" className='-ms-2' />
             </AvatarGroup>
-            <div className='-ml-4 flex flex-col text-sm text-[#2B2D42] md:-ml-8 md:text-base md:leading-6'>
+            <div className='-ml-4 flex flex-col text-sm md:-ml-8 md:text-base md:leading-6'>
               <p>Excellent user reviews</p>
               <div className='relative space-x-1 flex text-gray-300'>
                 <StarIcon className='text-[#f7b635]' />

@@ -4,7 +4,14 @@ import React from 'react'
 import { CheckIcon } from '../icons';
 import { Button } from '@heroui/button';
 
-const cards = [
+interface CardItem {
+  title: string;
+  price: string;
+  billingCycle: string
+  features: string[]
+}
+
+const cards: CardItem[] = [
   {
     title: "Weekly Subscription",
     price: "$14.99",
@@ -15,7 +22,6 @@ const cards = [
       "Comprehensive Cognitive Analysis",
       "Full Access to Development Tools"
     ],
-    buttonText: "Get started"
   },
   {
     title: "Monthly Excellence",
@@ -27,7 +33,6 @@ const cards = [
       "20+ Hours of Expert-Led Courses",
       "Personalized Development Path"
     ],
-    buttonText: "Get started"
   }
 ];
 
@@ -35,7 +40,7 @@ export default function PricingSection() {
   return (
     <div className='relative py-6 md:py-10'>
       <div className="mx-auto w-full max-w-[740px]">
-        <h3 className="order-4 text-center text-[28px] font-semibold text-[#2C3345] md:text-[39px]">Explore our plans</h3>
+        <h3 className="order-4 text-center text-[28px] font-semibold md:text-[39px]">Explore our plans</h3>
       </div>
       <p className="text-center text-base md:pt-8 md:text-[18px]">Discover our flexible offers and choose the one that best suits your learning and personal development journey.</p>
       <div className='flex items-center justify-center gap-3 pt-5 max-lg:flex-col md:gap-6 md:pt-8'>

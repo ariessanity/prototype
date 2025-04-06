@@ -3,7 +3,12 @@
 import React from 'react'
 import { Accordion, AccordionItem } from '@heroui/accordion'
 
-const faqs = [
+interface FaqItem {
+  question: string,
+  answer: string,
+}
+
+const faqs: FaqItem[] = [
   {
     question: "What if I'm not satisfied with the program?",
     answer:
@@ -34,7 +39,7 @@ const faqs = [
 export default function FaqSection() {
   return (
     <div className='relative mx-auto w-full gap-6 text-left lg:grid lg:grid-cols-[1fr_4fr] lg:gap-14 pt-14'>
-      <h2 className="text-[28px] font-semibold leading-[33px] text-[#2B2D42] max-lg:text-center md:mb-8 md:text-[39px] md:leading-[49px] lg:max-w-[200px]"><span className="hinline-block">Frequently Asked Questions</span></h2>
+      <h2 className="text-[28px] font-semibold leading-[33px] text-secondary-foreground max-lg:text-center md:mb-8 md:text-[39px] md:leading-[49px] lg:max-w-[200px]"><span className="hinline-block">Frequently Asked Questions</span></h2>
       <Accordion selectionMode="multiple">
         {faqs.map((faq, index) => {
           return (

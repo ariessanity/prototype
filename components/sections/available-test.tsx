@@ -1,9 +1,19 @@
 import { Card, CardBody } from '@heroui/card'
-import React from 'react'
+import React, { ReactNode } from 'react'
 import { ArrowIcon, BrainIcon, CheckmarkIcon, ClockIcon, LightbulbIcon, PersonalityIcon, RelationIcon } from '../icons'
 import { Button } from '@heroui/button'
 
-const cards = [
+interface CardItem {
+  icon: ReactNode;
+  title: string;
+  time: string;
+  question: string;
+  textButton: string;
+  iconButton?: ReactNode;
+  isDisabled: boolean;
+}
+
+const cards: CardItem[] = [
   {
     icon: <BrainIcon />,
     title: "IQ / Intelligence Test",

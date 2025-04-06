@@ -1,10 +1,15 @@
 import { Card, CardBody } from '@heroui/card'
-import React from 'react'
+import React, { ReactNode } from 'react'
 import { ReportIcon, RocketIcon, TestIcon } from '../icons'
 
 
+interface CardItem {
+  icon: ReactNode;
+  title: string;
+  description: string;
+}
 
-const cards = [
+const cards: CardItem[] = [
   {
     icon: <TestIcon />,
     title: "Take a test",

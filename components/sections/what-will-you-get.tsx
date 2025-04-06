@@ -4,25 +4,13 @@ import { BlueCheckIcon } from '../icons'
 import { ScrollShadow } from '@heroui/scroll-shadow'
 import { Card, CardBody } from '@heroui/card'
 
-const cards = [
-  {
-    description: "Authenticated intelligence certification validated by cognitive science experts"
-  },
-  {
-    description: "Deep-dive analysis revealing your complete cognitive potential and capabilities"
-  },
-  {
-    description: "Scientifically-calibrated training tools designed by neuroscience specialists"
-  },
-  {
-    description: "Authenticated intelligence certification validated by cognitive science experts"
-  },
-  {
-    description: "Expert-crafted educational content based on leading cognitive research"
-  },
-  {
-    description: "Advanced reasoning exercises designed by neural specialists"
-  },
+const descriptions: string[] = [
+  "Authenticated intelligence certification validated by cognitive science experts",
+  "Deep-dive analysis revealing your complete cognitive potential and capabilities",
+  "Scientifically-calibrated training tools designed by neuroscience specialists",
+  "Authenticated intelligence certification validated by cognitive science experts",
+  "Expert-crafted educational content based on leading cognitive research",
+  "Advanced reasoning exercises designed by neural specialists",
 ]
 
 export default function WhatWillYouGetSection() {
@@ -34,15 +22,15 @@ export default function WhatWillYouGetSection() {
       <h3 className='text-center text-[28px] font-semibold md:text-[39px]'>What Will You Get</h3>
       <ScrollShadow hideScrollBar={true} orientation={'horizontal'} className='overflow-x-auto scrollbar-hide pt-5 max-lg:w-[calc(100vw-48px)]'>
         <div className='flex gap-6'>
-          {cards.map((card, index) => {
+          {descriptions.map((description, index) => {
             return (
-              <Card key={index} className='max-w-[236px] shrink-0 rounded-lg border border-[#D9E7FF] max-lg:w-[236px] shadow-none'>
+              <Card key={index} className='max-w-[236px] shrink-0 rounded-lg border border-muted max-lg:w-[236px] shadow-none'>
                 <CardBody className='h-auto break-words text-left overflow-y-auto !flex-row items-start gap-4 p-4 antialiased md:py-6'>
                   <div className='p-1'>
                     <BlueCheckIcon />
                   </div>
-                  <p className='max-w-[80%] text-sm text-[#2C3345]'>
-                    {card.description}
+                  <p className='max-w-[80%] text-sm'>
+                    {description}
                   </p>
                 </CardBody>
               </Card>
