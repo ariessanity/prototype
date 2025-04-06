@@ -38,7 +38,7 @@ export default function FaqSection() {
       <Accordion selectionMode="multiple">
         {faqs.map((faq, index) => {
           return (
-            <AccordionItem key={index} aria-label={faq.question} title={faq.question} className='border-b-1 border-muted !rounded-none text-left' classNames={{ heading: 'font-medium text-medium' }}>
+            <AccordionItem key={index} aria-label={faq.question} title={faq.question} className='border-b-1 border-muted !rounded-none text-left' classNames={{ title: 'text-lg font-medium', }}>
               {faq.answer}
             </AccordionItem>
           )
