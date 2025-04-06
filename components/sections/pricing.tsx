@@ -77,6 +77,7 @@ export default function PricingSection() {
           })}
         </div>
       </div>
+      <p className="mt-4 text-center text-[15px] leading-5">*Visit our <a className="underline" href="#">pricing page</a> to find out more details.</p>
     </div>
   )
 }
